@@ -1,0 +1,91 @@
+/*
+ * AwesomeKeys, a Minecraft server plugin wich adds locks and keys management
+ * Copyright (C) LucRatiff
+ * 
+ * This file is part of AwesomeKeys.
+ *
+ * AwesomeKeys is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published
+ * by the Free Software Foundation, either version 3 of the License,
+ * or (at your option) any later version.
+ * AwesomeKeys is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * You should have received a copy of the GNU General Public License
+ * along with AwesomeKeys. If not, see <https://www.gnu.org/licenses/>
+ */
+
+package fr.lucratiff.awesomekeys.utils;
+
+public enum MessageType {
+    
+	ACTION_NO_KEY,
+    ACTION_WRONG_KEY,
+    ACTION_ERR_DOUBLECHEST_FROM_LOCKED_CHEST,
+    ACTION_ERR_PICK_KEY_ITEM_TYPE,
+    ACTION_ERR_PICK_KEY_EXACT_ITEM,
+    
+    CMD_ERR_NEW,
+    CMD_ERR_PERMISSION,
+    CMD_ERR_NAME_LENGTH,
+    CMD_ERR_LOCKS_LIMITATION,
+    CMD_ERR_LOCK_NAME_EXISTS,
+    CMD_ERR_LOCK_NAME_NOT_FOUND,
+    CMD_ERR_EMPTY_HAND,
+    CMD_ERR_WRONG_MATERIAL,
+    CMD_ERR_WRONG_DURABILITY,
+    CMD_SUCCESS_LOCK_CREATED,
+    CMD_SUCCESS_KEY_CREATED,
+    CMD_ERR_NOT_LOCKABLE,
+    CMD_ERR_NO_LOCK_ON_LOCKABLE,
+    CMD_ERR_BELONGS_TO_ANOTHER_PLAYER,
+    CMD_ERR_ACCESS_PERMISSION,
+    CMD_ERR_ALREADY_NO_GREETING,
+    CMD_SUCCESS_GREETING_REMOVED,
+    CMD_SUCCESS_GREETING_ADDED,
+    CMD_SUCCESS_BLOCK_LOCKED,
+    CMD_SUCCESS_LOCK_REMOVED,
+    CMD_ERR_NO_LOCK_TO_REMOVE,
+    CMD_ERR_GREETING,
+    CMD_ERR_GREETING_COLOR_CODE,
+    CMD_ERR_GREETING_LENGTH_LIMIT,
+    CMD_ERR_GREETING_ON_CONTAINER,
+    CMD_ERR_EDITKEY,
+    CMD_ERR_NOT_A_NUMBER,
+    CMD_ERR_DESCRIPTION_LINE,
+    CMD_ERR_DESCRIPTION_LENGTH,
+    CMD_SUCCESS_DESCRIPTION_CHANGED,
+    CMD_SUCCESS_MASTER_KEY,
+    CMD_ERR_PURGE,
+    CMD_INFO_PURGE_UNLINKED_DURATION,
+    CMD_ERR_PURGE_UNLINKED_ALREADY_STARTED,
+    CMD_SUCCESS_UNLINKED_FILES_PURGED,
+    CMD_INFO_NO_UNLINKED_FILE,
+    CMD_ERR_PLAYER_NOT_FOUND,
+    CMD_ERR_PLAYER_DATAS_NOT_FOUND,
+    CMD_SUCCESS_FILES_FROM_PLAYER_PURGED,
+    CMD_SUCCESS_FILES_PURGED,
+    CMD_ERR_LOGS,
+    CMD_ERR_LOGS_FILE_EXISTS,
+    CMD_ERR_LOGS_FILE_EXCEPTION,
+    CMD_ERR_LOGS_BLOCK,
+    CMD_ERR_LOGS_BLOCK_TARGET,
+    CMD_ERR_LOGS_WORLD_NOT_FOUND,
+    CMD_ERR_LOGS_GROUP,
+    CMD_ERR_LOGS_GROUP_WORLD_MISSING,
+    CMD_ERR_LOGS_PLAYER,
+    CMD_ERR_LOGS_PLAYER_UUID,
+    CMD_ERR_LOGS_FROM,
+    CMD_ERR_LOGS_DATE_FORMAT,
+    CMD_SUCCESS_LOGS_TO_FILE,
+    
+    LOG_LOCK_ADDED,
+    LOG_LOCK_REMOVED,
+    LOG_LOCK_ACCESS,
+    LOG_LOCK_ACCESS_DENIED,
+    LOG_CONTAINER_ADD,
+    LOG_CONTAINER_REMOVE,
+    LOG_DISPLAY,
+    LOG_NO_LOG
+}

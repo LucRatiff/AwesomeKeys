@@ -1,0 +1,14 @@
+name: AwesomeKeys
+main: fr.lucratiff.awesomekeys.main.AwesomeKeys
+version: 1.0
+author: LucRatiff
+description: Adds locks and keys to your Minecraft server
+website: https://lucratiff.github.io/index.html?page=awesomekeys
+commands:
+    key:
+        description: AwesomeKeys main command
+        usage: /key <args>
+    akverifylang:
+        description: Verify AwesomeKeys language file
+        usage: /akverifylang <language code>
+
