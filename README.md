@@ -24,41 +24,50 @@ If the block is locked with a code, it will display an 3x3 inventory on access. 
 The main command is /key, or the alias /k (you can customize the alias). First, you have to define a new Lock with a name. You can define as many locks as you wish. Write the name somewhere, because you will need it to create new keys. There is no name conflict with other players, each lock also has a unique identifier (uuid).
 
 Defining a new lock :
-	/k new lock <name>
+
+`/k new lock <name>`
 
 Then, you (and only you) can create new keys related to this lock :
-	/k new key <name>
+
+`/k new key <name>`
 
 Use the same name for the lock and its keys. You can then share the keys to your friends (or sell them or whatever you want). Be careful to whom you give your keys, because in the latter you won't really know who will access your locked blocks.
 
 You or the player that received your key can add a description in a maximum of four lines :
-	/k editkey <line> <description>
+
+`/k editkey <line> <description>`
 
 You can then add the lock you created on any lockable block :
-	/k add <name>
+
+`/k add <name>`
 
 The block your are pointing at will get locked. If you don't want it anymore, you can remove the lock :
-	/k remove <name>
+
+`/k remove <name>`
 
 If the locked block is a door or a fence gate, you can add a greeting message, with the color of your choice (a single Minecraft color code character among the following : 0123456789abcdef) :
-	/k greeting <color code> <greeting message>
+
+`/k greeting <color code> <greeting message>`
 
 To remove the greeting message :
-	/k greeting none
+
+`/k greeting none`
 
 Note that a lock doesn't protect the block from destruction if it's not protected by a plugin.
 
 ## The Master Key
 
 For server owners and staff members, there is a special key wich can access any locked block.
-	/k master
+
+`/k master`
 
 ## Logs
 
 There are logs for any action related to locks and keys. If you have the permission, you can print the logs
 in the chat or in a file. The logs can be filtered with many tags. Please refer to the documentation to use
 it properly.
-	/k logs <filters> (> <file>)
+
+`/k logs <filters> (> <file>)`
 
 ## Permissions
 
